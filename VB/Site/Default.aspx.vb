@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Data
 Imports System.Configuration
 Imports System.Collections
@@ -11,11 +10,12 @@ Imports System.Web.UI.WebControls.WebParts
 Imports System.Web.UI.HtmlControls
 
 Partial Public Class _Default
-	Inherits System.Web.UI.Page
-	Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-		If IsPostBack Then
-			popup.ShowPageScrollbarWhenModal = cbShowPageScrollbarWhenModal.Checked
-			popup.AutoUpdatePosition = cbAutoUpdatePosition.Checked
-		End If
-	End Sub
+    Inherits System.Web.UI.Page
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+        If IsPostBack Then
+            popup.ShowPageScrollbarWhenModal = cbShowPageScrollbarWhenModal.Checked
+            popup.AutoUpdatePosition = cbAutoUpdatePosition.Checked
+        End If
+    End Sub
 End Class
